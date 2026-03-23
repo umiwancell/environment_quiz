@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>เกมตอบคำถามเกี่ยวกับสิ่งแวดล้อม</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div id="title-screen">
+
+<h1>เกมตอบคำถามเกี่ยวกับสิ่งแวดล้อม</h1>
+
+<button id="startBtn">START</button>
+
+</div>
+
+
+<div id="level-screen" style="display:none">
+
+<h2>การเลือกเลเวล</h2>
+
+<img src="img/beginner.png" class="character" data-level="beginner">
+
+<img src="img/middle.png" class="character" data-level="middle">
+
+<img src="img/hard.png" class="character" data-level="hard">
+
+</div>
+
+
+<div id="quiz-screen" style="display:none">
+
+<p id="progress"></p>
+
+<p id="timer">0วินาที</p>
+
+<h2 id="question"></h2>
+
+<div id="choices"></div>
+
+<img id="result-image">
+
+</div>
+
+
+<div id="result-screen" style="display:none">
+
+<h2>ผลลัพธ์</h2>
+<p id="correct"></p>
+<p id="time"></p>
+<p id="score"></p>
+
+<div id="explanations"></div>
+
+</div>
+
+
+<script src="data/questions.js"></script>
+<script src="script.js"></script>
+
+</body>
+
+</html>

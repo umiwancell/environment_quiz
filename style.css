@@ -1,0 +1,128 @@
+body{
+
+font-family:sans-serif;
+
+text-align:center;
+
+margin:0;
+
+background: size cover;
+
+background-position:center;
+
+background-repeat:no-repeat;
+
+background-attachment: fixed;
+
+transition:0.5s;
+
+}
+
+
+/* キャラクター */
+
+.character{
+
+width:200px;
+
+cursor:pointer;
+
+animation:float 3s infinite;
+
+margin:20px;
+
+}
+
+
+@keyframes float{
+
+0%{transform:translateY(0)}
+
+50%{transform:translateY(-10px)}
+
+100%{transform:translateY(0)}
+
+}
+
+
+/* ボタン */
+
+#choices button{
+
+display:block;
+
+margin:10px auto;
+
+padding:15px;
+
+width:60%;
+
+font-size:18px;
+
+border:none;
+
+border-radius:10px;
+
+background:#4CAF50;
+
+color:white;
+
+cursor:pointer;
+
+}
+
+
+#choices button:hover{
+
+transform:scale(1.05);
+
+}
+
+
+/* 〇× */
+
+#result-image{
+
+width:200px;
+
+position:fixed;
+
+left:50%;
+
+top:50%;
+
+transform:translate(-50%,-50%);
+
+display:none;
+
+animation:pop 0.4s;
+
+}
+
+
+@keyframes pop{
+
+0%{transform:translate(-50%,-50%) scale(0)}
+
+100%{transform:translate(-50%,-50%) scale(1)}
+
+}
+
+
+/* スマホ */
+
+@media (max-width:768px){
+
+.character{
+
+width:120px;
+
+}
+
+#choices button{
+
+width:90%;
+
+}
+
+}
