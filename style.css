@@ -8,7 +8,7 @@ margin:0;
 
 background: size cover;
 
-background-position:center;
+background-position:center top;
 
 background-repeat:no-repeat;
 
@@ -112,6 +112,13 @@ animation:pop 0.4s;
 /* スマホ */
 
 @media (max-width:768px){
+
+
+body {
+  background-size: cover;
+  background-position: center top;
+  background-attachment: scroll; /* ←これ重要 */
+}
 
 .character{
 
