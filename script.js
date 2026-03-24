@@ -23,9 +23,6 @@ const resultImage = document.getElementById("result-image")
 
 function changeBackground(image){
 document.body.style.backgroundImage = "url('img/"+image+"')"
-document.body.style.backgroundSize = "150%"
-document.body.style.backgroundPosition = "center 20%"
-document.body.style.backgroundRepeat = "no-repeat"
 }
 
 
